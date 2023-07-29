@@ -45,3 +45,18 @@ const menuItem = menuItems.forEach((item)=>{
         }
     }
 }) 
+
+document.addEventListener('DOMContentLoaded',function(){
+    var currentIndex = 0
+    const sliderItems = document.querySelectorAll("#slider .text-content")
+    const slider = document.getElementById('slider')
+    slider.style.backgroundImage = `url('assets/img/slider/slider1.jpg')`;
+    function showNextImage(){
+        sliderItems[currentIndex].style.display = 'none'
+        currentIndex = (currentIndex + 1) % sliderItems.length;
+        sliderItems[currentIndex].style.display = 'block';
+        var currentHeading = sliderItems[currentIndex].querySelector('.text-heading').textContent;
+        slider.style.backgroundImage = `url('assets/img/slider/slider${currentIndex + 1}.jpg')`;
+    }
+    setInterval(showNextImage, 3000);
+})

@@ -206,8 +206,12 @@ html{
 #slider{
     margin-top: 46px;
     padding-top: 50%;/*50% chiều ngang kích thước của chính nó*/
-    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
+    /* background: url('../img/slider/slider1.jpg') top center / cover no-repeat; */
     /*cú pháp background: background-image background-position / background-size background-repeat*/
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: example 3s infinite; 
     position: relative;    
 }
 
