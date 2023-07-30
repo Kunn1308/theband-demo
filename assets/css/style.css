@@ -227,11 +227,13 @@ html{
 #slider .text-heading{
     font-weight: 500;/*chỉnh cho chữ nó mỏng hơn*/
     font-size: 24px;
+    text-shadow: 0 0 2px #000;
 }
 
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 2px #000;
 }
 
 
